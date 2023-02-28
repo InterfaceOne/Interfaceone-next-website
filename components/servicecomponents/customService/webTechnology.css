@@ -1,0 +1,54 @@
+.content-1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}
+.svg{
+    background-color: goldenrod;
+    width: 8rem;
+    margin: 1rem;
+}
+
+.one{
+    width: 70%;
+    margin-left: 10%;
+    border: 1px solid goldenrod;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.main{
+    color:white;
+}
+h1{
+    color:goldenrod;
+    font-weight:800;
+    font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .one{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 486px) {
+    .one{
+      width: 100%;
+      
+    }
+    .content-1{
+        width: 95%;
+    }
+  }
+  @media screen and (max-width: 250px) {
+    .one{
+      width: 100%;
+    }
+    .content-1{
+        width: 95%;
+    }
+  }
+  .p{
+    font-size: 24px;
+    font-weight: 700;
+  }
