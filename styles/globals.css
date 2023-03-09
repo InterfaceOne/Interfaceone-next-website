@@ -360,3 +360,10 @@ code {
     transform: rotate(359deg);
   }
 }
+
+@media (max-width: 550px) {
+  .imagenext {
+    width: 100px;
+    height: 100px;
+  }
+}

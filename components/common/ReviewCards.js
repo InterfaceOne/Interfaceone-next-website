@@ -60,7 +60,14 @@ export default function ReviewCards(props) {
                 borderRadius: "5px",
               }}
             >
-              <Image width={100} height={100} src={item.img} alt="front image" />
+              <Image
+                width={100}
+                height={100}
+                src={item.img}
+                alt="front image"
+                unoptimized={true}
+                priority
+              />
             </FrontSide>
             <BackSide
               style={{
@@ -78,6 +85,8 @@ export default function ReviewCards(props) {
                 height={100}
                 src={props.data.backImages[index].pic}
                 alt="back image"
+                unoptimized={true}
+                priority
               />
             </BackSide>
           </Flippy>

@@ -25,7 +25,7 @@ const MainWrapper = styled.div`
     }
   }
 
-  @media (max-width: 520px) {
+  @media (max-width: 550px) {
     ${tw`  flex flex-col  justify-center items-center px-6 `};
   }
 `;
@@ -37,8 +37,13 @@ const LeftContainer = styled.div`
   @media (max-width: 768px) {
     ${tw``};
   }
+  @media (max-width: 550px) {
+    ${tw` flex-col justify-center items-start h-full mb-0  `};
+    margin-bottom: -30%;
+  }
   @media (max-width: 520px) {
     ${tw` flex-col justify-center items-start h-full mb-0  `};
+    margin-bottom: -40%;
   }
 `;
 const HeaderWrapper = styled.div`
@@ -74,7 +79,7 @@ const SecHeadLayer = styled(TypedAnimation)`
     font-size: 90px;
   }
   @media (max-width: 590px) {
-    font-size: 80px;
+    font-size: 70px;
   }
   @media (max-width: 520px) {
     font-size: 70px;
@@ -92,6 +97,9 @@ const Content = styled.div`
 
   @media (max-width: 768px) {
     top: 56%;
+  }
+  @media (max-width: 550px) {
+    top: 62%;
   }
   @media (max-width: 450px) {
     top: 62%;
@@ -142,14 +150,33 @@ const RightContainer = styled.div`
   justify-content: space-evenly;
   align-content: center;
   z-index: 10;
-  gap:3rem;
+  gap: 3rem;
   @media (max-width: 1024px) {
-  margin-top:10%;
+    margin-top: 10%;
   }
 
-
   @media (max-width: 768px) {
-    display: none;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  @media (max-width: 550px) {
+    /* display: none; */
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 5%;
+  }
+  @media (max-width: 486px) {
+    /* display: none; */
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 5%;
+  }
+  @media (max-width: 380px) {
+    margin-top: 25%;
   }
 `;
 const ImageWrapper1 = styled.div`
@@ -188,7 +215,7 @@ const SideLine = styled.div`
   @media (max-width: 768px) {
     ${tw`-ml-16 -mt-10 `}
   }
-  @media (max-width: 520px) {
+  @media (max-width: 550px) {
     display: none;
   }
 `;

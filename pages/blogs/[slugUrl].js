@@ -19,11 +19,9 @@ const token = process.env.NEXT_PUBLIC__CONTENTFUL_CPA;
 const space = process.env.NEXT_PUBLIC__CONTENTFUL_SPACE_ID;
 
 const BlogDetails = (props) => {
-
   const router = useRouter();
 
   const [slugUrl, setSlugUrl] = React.useState(router.query.slugUrl);
-
 
   React.useEffect(() => {
     setSlugUrl(router.query.slugUrl);
@@ -229,6 +227,8 @@ const BlogDetails = (props) => {
               alt={data?.blogCollection?.items[0].image.title}
               width={800}
               height={400}
+              unoptimized={true}
+              priority
             />
           </S.ImageWrapper>
           <S.Content>

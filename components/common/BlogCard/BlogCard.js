@@ -6,7 +6,6 @@ import Image from "next/image";
 const BlogCard = (props) => {
   const { blog } = props;
 
-
   return (
     <Link
       className="link"
@@ -16,7 +15,14 @@ const BlogCard = (props) => {
     >
       <S.Card>
         <S.ImageWrapper>
-          <Image src={blog?.image?.url} alt={blog?.image?.title} width={500} height={500}/>
+          <Image
+            src={blog?.image?.url}
+            alt={blog?.image?.title}
+            width={500}
+            height={500}
+            unoptimized={true}
+            priority
+          />
         </S.ImageWrapper>
         <S.Details>
           <S.Title>{blog.title}</S.Title>

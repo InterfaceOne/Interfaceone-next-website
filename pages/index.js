@@ -85,7 +85,14 @@ const Index = (props) => {
           <div data-menuanchor="hello">
             <S.LogoWrapper1>
               <a href="/">
-                <Image src={IOIcon} width={45} height={85} alt="interone" />
+                <Image
+                  src={IOIcon}
+                  width={45}
+                  height={85}
+                  alt="interone"
+                  unoptimized={true}
+                  priority
+                />
               </a>
             </S.LogoWrapper1>
           </div>
@@ -93,7 +100,14 @@ const Index = (props) => {
           <div data-menuanchor="hello">
             <S.LogoWrapper2>
               <a href="/">
-                <Image src={IOIcon} width={30} height={53} alt="interone" />
+                <Image
+                  src={IOIcon}
+                  width={30}
+                  height={53}
+                  alt="interone"
+                  unoptimized={true}
+                  priority
+                />
               </a>
             </S.LogoWrapper2>
           </div>

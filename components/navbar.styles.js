@@ -117,7 +117,7 @@ const MenuList = styled.div`
     margin-bottom:2rem;
   }
 `;
-const NavLink = styled.div`
+const NavLink = styled.a`
   ${tw` font-bold text-center flex transition duration-300  hover:text-gold cursor-pointer`}
   &.active {
     ${tw`text-white `}

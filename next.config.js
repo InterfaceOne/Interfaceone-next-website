@@ -9,6 +9,7 @@ const nextConfig = {
 
 module.exports = (phase, { defaultConfig }) => {
   return {
+    distDir: ".next",
     ...defaultConfig,
     swcMinify: true,
     compiler: {
@@ -61,7 +62,15 @@ module.exports = (phase, { defaultConfig }) => {
         "images.ctfassets.net",
         "ezgif.com",
         "media.giphy.com",
+        "convertio.co",
+        "interone-next1.web.app",
+        "cdn.dribbble.com"
       ],
+      output:"standalone",
+      path: '/_next/image',
+      loader: 'default',
+      // formats: ['image/png', 'image/webp'], 
+      quality: 75,
     },
     webpack: (config) => {
       // config.resolve = {

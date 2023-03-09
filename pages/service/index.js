@@ -61,6 +61,8 @@ function ServiceList({ data }) {
                           src={item?.icon?.url}
                           width={500}
                           height={500}
+                          unoptimized={true}
+                          priority
                         />
                       </S.IconWrapper>
                       <S.Heading>
@@ -88,6 +90,8 @@ function ServiceList({ data }) {
                           src={item?.icon?.url}
                           width={500}
                           height={500}
+                          unoptimized={true}
+                          priority
                         />
                       </S.IconWrapper_1>
                       <S.Heading>

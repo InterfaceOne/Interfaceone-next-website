@@ -44,6 +44,8 @@ const IndusSwiper = ({ data }) => {
                       alt={item?.image?.title}
                       width={500}
                       height={333}
+                      unoptimized={true}
+                      priority
                     />
                   </Tilt>
                 </S.ImageContainer>

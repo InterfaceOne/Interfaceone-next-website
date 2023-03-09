@@ -43,10 +43,10 @@ export const Navbar = () => {
       ) : (
         <S.Container>
           <S.LogoWrapper1 onClick={() => Router.push("/")}>
-            <Image src={IOIcon} width={45} height={85} alt="interone" />
+            <Image src={IOIcon} width={45} height={85} alt="interone" unoptimized={true} priority />
           </S.LogoWrapper1>
           <S.LogoWrapper2 onClick={() => Router.push("/")}>
-            <Image src={IOIcon} width={30} height={53} alt="interone" />
+            <Image src={IOIcon} width={30} height={53} alt="interone" unoptimized={true} priority  />
           </S.LogoWrapper2>
           <S.NavLinksWrapper nav={nav}>
             <S.NavLink

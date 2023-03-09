@@ -36,3 +36,53 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+On deployment to firebase ,you need to perform the following operation for firebase.json
+
+////default firebase.json////
+
+{
+  "hosting": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "us-central1"
+    }
+  }
+}
+
+
+/////and then change configuration for firebase.json ////
+
+
+{
+  "hosting": {
+    "public": "./.firebase/interone-next1/hosting/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      ".git",
+      ".runtimeconfig.json",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "node_modules"
+    ],
+    "cleanUrls": true,
+    "frameworksBackend": {
+      "region": "us-central1"
+    },
+    "rewrites": [ {
+      "source": "**",
+      "destination": "/404.html"
+    } ]
+  }
+}
+
+after changing the configuration do firebase deploy
+
